@@ -1,0 +1,22 @@
+.card-footer{
+    display: flex;
+    margin-left: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.card-header{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: auto;
+}
+.text-info{
+    text-align: center;
+}
+.main-container{
+    width: 300px;
+    margin-top: 40px;
+}
+h4{
+    text-align: center;
+}

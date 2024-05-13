@@ -1,0 +1,252 @@
+.shopcategory-banner {
+    width: 100%;
+    margin: 10px 230px;
+}
+
+.img_banner {
+    width: 900px;
+}
+
+.shopcategory-indexSort {
+    display: flex;
+    margin: 0px 170px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shopcategory-sort {
+    padding: 10px 20px;
+    border-radius: 40px;
+    display: flex;
+    gap: 20px;
+    border: 1px solid #888;
+}
+
+.shopcategory-sort img {
+    width: 10px;
+    height: 20px;
+}
+
+.shopcategory-indexSort p {
+    font-weight: 600;
+}
+
+.shopcategory-products {
+    margin: 20px 170px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 80px;
+}
+
+.shopcategory-loadmore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px auto;
+    width: 233px;
+    height: 69px;
+    border-radius: 75px;
+    background: #ededed;
+    color: #787878;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Media qurilmalari */
+
+/* 1400px o'lchamidan kichik ekranga */
+@media (max-width: 1500px) {
+    .shopcategory-banner {
+        margin: 10px 150px;
+    }
+    .shopcategory-indexSort {
+        margin: 0px 120px;
+    }
+    .shopcategory-products {
+        margin: 20px 120px;
+    }
+    .shopcategory-loadmore {
+        margin: 150px auto;
+    }
+}
+
+@media (max-width: 1400px) {
+    .shopcategory-banner {
+        margin: 10px 150px;
+    }
+    .shopcategory-indexSort {
+        margin: 0px 120px;
+    }
+    .shopcategory-products {
+        margin: 20px 120px;
+    }
+    .shopcategory-loadmore {
+        margin: 150px auto;
+    }
+}
+
+/* 1300px o'lchamidan kichik ekranga */
+@media (max-width: 1300px) {
+    .shopcategory-banner {
+        margin: 10px 150px;
+    }
+    .shopcategory-indexSort {
+        margin: 0px 120px;
+    }
+    .shopcategory-products {
+        margin: 20px 120px;
+    }
+    .shopcategory-loadmore {
+        margin: 150px auto;
+    }
+}
+
+/* 1200px o'lchamidan kichik ekranga */
+@media (max-width: 1200px) {
+    .shopcategory-banner {
+        margin: 10px 110px;
+    }
+    .shopcategory-indexSort {
+        margin: 0px 90px;
+    }
+    .shopcategory-products {
+        margin: 20px 90px;
+    }
+    .shopcategory-loadmore {
+        margin: 150px auto;
+    }
+}
+
+/* 1100px o'lchamidan kichik ekranga */
+@media (max-width: 1100px) {
+    .shopcategory-banner {
+        margin: 10px 90px;
+    }
+    .shopcategory-indexSort {
+        margin: 0px 70px;
+    }
+    .shopcategory-products {
+        margin: 20px 70px;
+    }
+    .shopcategory-loadmore {
+        margin: 150px auto;
+    }
+}
+
+/* 1000px o'lchamidan kichik ekranga */
+@media (max-width: 1000px) {
+    .shopcategory-banner {
+        margin: 10px 100px;
+    }
+    .shopcategory-indexSort {
+        margin: 0px 50px;
+    }
+    .shopcategory-products {
+        margin: 20px 50px;
+    }
+    .shopcategory-loadmore {
+        margin: 150px auto;
+    }
+    .img_banner{
+        width: 600px;
+    }
+}
+
+/* 900px o'lchamidan kichik ekranga */
+@media (max-width: 900px) {
+    .shopcategory-banner {
+        margin: 10px 110px;
+    }
+    .shopcategory-indexSort {
+        margin: 0px 30px;
+    }
+    .shopcategory-products {
+        margin: 20px 30px;
+    }
+    .shopcategory-loadmore {
+        margin: 150px auto;
+    }
+    .img_banner{
+        width: 600px;
+    }
+}
+
+/* 800px o'lchamidan kichik ekranga */
+@media (max-width: 800px) {
+    .shopcategory-banner {
+        margin: 10px 30px;
+    }
+    .shopcategory-indexSort {
+        margin: 0px 10px;
+    }
+    .shopcategory-products {
+        margin: 20px 10px;
+    }
+    .shopcategory-loadmore {
+        margin: 150px auto;
+    }
+}
+
+/* 700px o'lchamidan kichik ekranga */
+@media (max-width: 700px) {
+    .shopcategory-banner {
+        margin: 10px 20px;
+    }
+    .shopcategory-indexSort {
+        margin: 0px 10px;
+    }
+    .shopcategory-products {
+        margin: 20px 10px;
+    }
+    .shopcategory-loadmore {
+        margin: 150px auto;
+    }
+}
+
+/* 600px o'lchamidan kichik ekranga */
+@media (max-width: 600px) {
+    .shopcategory-banner {
+        margin: 10px 10px;
+    }
+    .shopcategory-indexSort {
+        margin: 0px 5px;
+    }
+    .shopcategory-products {
+        margin: 20px 5px;
+    }
+    .shopcategory-loadmore {
+        margin: 150px auto;
+    }
+}
+
+/* 500px o'lchamidan kichik ekranga */
+@media (max-width: 500px) {
+    .shopcategory-banner {
+        margin: 10px 5px;
+    }
+    .shopcategory-indexSort {
+        margin: 0px 5px;
+    }
+    .shopcategory-products {
+        margin: 20px 5px;
+    }
+    .shopcategory-loadmore {
+        margin: 150px auto;
+    }
+}
+
+/* 400px o'lchamidan kichik ekranga */
+@media (max-width: 400px) {
+    .shopcategory-banner {
+        margin: 10px 5px;
+    }
+    .shopcategory-indexSort {
+        margin: 0px 5px;
+    }
+    .shopcategory-products {
+        margin: 20px 5px;
+    }
+    .shopcategory-loadmore {
+        margin: 150px auto;
+    }
+}

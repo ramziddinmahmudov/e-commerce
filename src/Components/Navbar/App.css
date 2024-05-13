@@ -1,0 +1,22 @@
+:root{
+    --textColor: black;
+    --backColor: white;
+    --hrColor: #e2e2e2;
+    --popular:#252525;
+}
+.darkaMode{
+    --textColor: white;
+    --backColor: #222020;
+    --hrColor: black;
+    --popular: white;
+}
+*{
+    margin:0;
+    padding: 0;
+}
+
+.con{
+    max-width: 1500px;
+    margin: auto;
+}
+

@@ -1,0 +1,222 @@
+.navbar {
+    justify-content: space-around;
+    padding: 16px;
+    box-shadow: 0 1px 3px -2px black;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    margin-bottom: 20px;
+}
+
+.dark {
+    width: 70px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-logo p {
+    color: black;
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav-menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+}
+
+.nav-menu hr {
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background: black;
+}
+
+.nav-login-cart {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.nav-login-cart button {
+    width: 157px;
+    height: 58px;
+    outline: none;
+    border: 1px solid #7a7a7a;
+    border-radius: 75px;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    background: white;
+    cursor: pointer;
+}
+
+.nav-logo h1 {
+    font-size: 36px;
+    color: black;
+}
+
+.nav-cart-count {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -35px;
+    margin-left: -55px;
+    border-radius: 11px;
+    font-size: 14px;
+    background: black;
+    color: white;
+}
+
+.nav-dropdown {
+    display: none;
+    transform: rotate(180deg);
+}
+
+.btnnnn {
+    width: 40px;
+}
+
+.kom {
+    width: 100px;
+    height: 100px;
+}
+
+/* Media qurilmalari */
+
+/* 1400px o'lchamidan kichik ekranga */
+@media (max-width: 1400px) {
+    .nav-menu {
+        gap: 40px;
+    }
+}
+
+/* 1300px o'lchamidan kichik ekranga */
+@media (max-width: 1300px) {
+    .nav-menu {
+        gap: 30px;
+    }
+}
+
+/* 1200px o'lchamidan kichik ekranga */
+@media (max-width: 1200px) {
+    .nav-menu {
+        gap: 20px;
+    }
+}
+
+/* 1100px o'lchamidan kichik ekranga */
+@media (max-width: 1100px) {
+    .nav-menu {
+        gap: 15px;
+    }
+}
+
+/* 1000px o'lchamidan kichik ekranga */
+@media (max-width: 1000px) {
+    .nav-menu {
+        gap: 10px;
+    }
+}
+
+/* 900px o'lchamidan kichik ekranga */
+@media (max-width: 900px) {
+    .nav-menu {
+        gap: 5px;
+    }
+}
+
+/* 800px o'lchamidan kichik ekranga */
+@media (max-width: 800px) {
+    .nav-menu {
+        gap: 0;
+    }
+
+    .nav-login-cart {
+        gap: 30px;
+    }
+}
+
+/* 700px o'lchamidan kichik ekranga */
+@media (max-width: 700px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-login-cart {
+        justify-content: center;
+    }
+
+    .darkMode {
+        display: none;
+    }
+}
+
+/* 600px o'lchamidan kichik ekranga */
+@media (max-width: 600px) {
+    .nav-logo p {
+        font-size: 30px;
+    }
+
+    .nav-login-cart button {
+        width: 120px;
+        height: 45px;
+        font-size: 16px;
+        border-radius: 50px;
+    }
+}
+
+/* 500px o'lchamidan kichik ekranga */
+@media (max-width: 500px) {
+    .nav-logo p {
+        font-size: 24px;
+    }
+
+    .nav-login-cart button {
+        width: 100px;
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+/* 400px o'lchamidan kichik ekranga */
+@media (max-width: 400px) {
+    .nav-logo p {
+        font-size: 20px;
+    }
+
+    .nav-login-cart button {
+        width: 80px;
+        height: 35px;
+        font-size: 12px;
+    }
+}
