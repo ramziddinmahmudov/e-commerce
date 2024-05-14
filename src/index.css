@@ -24,3 +24,7 @@ body {
 ::-webkit-scrollbar-track {
   background-color: #f1f1f1;
 }
+
+body{
+  transition: 0.5s;
+}
