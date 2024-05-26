@@ -1,5 +1,4 @@
 .shopcategory-banner {
-    width: 100%;
     margin: 10px 230px;
 }
 
@@ -52,9 +51,6 @@
     font-weight: 500;
 }
 
-/* Media qurilmalari */
-
-/* 1400px o'lchamidan kichik ekranga */
 @media (max-width: 1500px) {
     .shopcategory-banner {
         margin: 10px 150px;
@@ -84,8 +80,6 @@
         margin: 150px auto;
     }
 }
-
-/* 1300px o'lchamidan kichik ekranga */
 @media (max-width: 1300px) {
     .shopcategory-banner {
         margin: 10px 150px;
@@ -101,7 +95,6 @@
     }
 }
 
-/* 1200px o'lchamidan kichik ekranga */
 @media (max-width: 1200px) {
     .shopcategory-banner {
         margin: 10px 110px;
@@ -117,7 +110,6 @@
     }
 }
 
-/* 1100px o'lchamidan kichik ekranga */
 @media (max-width: 1100px) {
     .shopcategory-banner {
         margin: 10px 90px;
@@ -133,7 +125,6 @@
     }
 }
 
-/* 1000px o'lchamidan kichik ekranga */
 @media (max-width: 1000px) {
     .shopcategory-banner {
         margin: 10px 100px;
@@ -152,7 +143,6 @@
     }
 }
 
-/* 900px o'lchamidan kichik ekranga */
 @media (max-width: 900px) {
     .shopcategory-banner {
         margin: 10px 110px;
@@ -171,7 +161,6 @@
     }
 }
 
-/* 800px o'lchamidan kichik ekranga */
 @media (max-width: 800px) {
     .shopcategory-banner {
         margin: 10px 30px;
@@ -187,7 +176,7 @@
     }
 }
 
-/* 700px o'lchamidan kichik ekranga */
+
 @media (max-width: 700px) {
     .shopcategory-banner {
         margin: 10px 20px;
@@ -203,10 +192,9 @@
     }
 }
 
-/* 600px o'lchamidan kichik ekranga */
-@media (max-width: 600px) {
+@media (max-width: 605px) {
     .shopcategory-banner {
-        margin: 10px 10px;
+        margin: 10px 40px;
     }
     .shopcategory-indexSort {
         margin: 0px 5px;
@@ -217,12 +205,33 @@
     .shopcategory-loadmore {
         margin: 150px auto;
     }
+    .img_banner{
+        width: 500px;
+    }
 }
 
-/* 500px o'lchamidan kichik ekranga */
+@media (max-width: 560px) {
+    .shopcategory-banner {
+        margin: 10px 13px;
+    }
+    .shopcategory-indexSort {
+        margin: 0px 5px;
+    }
+    .shopcategory-products {
+        margin: 20px 5px;
+    }
+    .shopcategory-loadmore {
+        margin: 150px auto;
+    }
+    .img_banner{
+        width: 500px;
+    }
+}
+
+
 @media (max-width: 500px) {
     .shopcategory-banner {
-        margin: 10px 5px;
+        margin: 10px 0px;
     }
     .shopcategory-indexSort {
         margin: 0px 5px;

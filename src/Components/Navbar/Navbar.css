@@ -15,39 +15,52 @@
     border: 1px solid rgba(255, 255, 255, 0.18);
     margin-bottom: 20px;
 }
-
 .dark {
     width: 70px;
 }
-
+a{
+    color: var(--redColor);
+}
 .nav-logo {
     display: flex;
     align-items: center;
     gap: 10px;
 }
-
+.logo_burger{
+    width: 40px;
+    display: none;
+}
 .nav-logo p {
-    color: black;
+    color: var(--redColor);
     font-size: 38px;
     font-weight: 600;
+    list-style: none;
 }
 
 .nav-menu {
-    display: flex;
     align-items: center;
     list-style: none;
     gap: 50px;
-    color: black;
-    font-size: 20px;
-    font-weight: 500;
+    color: var(--textColor);
+    font-size: 30px;
+    font-weight: 700;
+    display: none;
+    flex-direction: column;
+    background-color: var(--backColor);
+    position: absolute;
+    top: 150px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 5px;
 }
 
-.nav-menu li {
+.nav-menu .li1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 3px;
+    color: var(--textColor);
     cursor: pointer;
 }
 
@@ -56,7 +69,7 @@
     width: 80%;
     height: 3px;
     border-radius: 10px;
-    background: black;
+    background: var(--textColor);
 }
 
 .nav-login-cart {
@@ -71,16 +84,11 @@
     outline: none;
     border: 1px solid #7a7a7a;
     border-radius: 75px;
-    color: black;
+    color: var(--textColor);
     font-size: 20px;
     font-weight: 500;
-    background: white;
+    background: var(--backColor);
     cursor: pointer;
-}
-
-.nav-logo h1 {
-    font-size: 36px;
-    color: black;
 }
 
 .nav-cart-count {
@@ -93,13 +101,17 @@
     margin-left: -55px;
     border-radius: 11px;
     font-size: 14px;
-    background: black;
-    color: white;
+    background: var(--textColor);
+    color:var(--backColor);
 }
 
 .nav-dropdown {
     display: none;
     transform: rotate(180deg);
+}
+
+.open {
+    display: block;
 }
 
 .btnnnn {
@@ -110,52 +122,48 @@
     width: 100px;
     height: 100px;
 }
-
-/* Media qurilmalari */
-
-/* 1400px o'lchamidan kichik ekranga */
 @media (max-width: 1400px) {
     .nav-menu {
         gap: 40px;
     }
 }
 
-/* 1300px o'lchamidan kichik ekranga */
 @media (max-width: 1300px) {
     .nav-menu {
         gap: 30px;
     }
 }
 
-/* 1200px o'lchamidan kichik ekranga */
 @media (max-width: 1200px) {
     .nav-menu {
         gap: 20px;
     }
 }
 
-/* 1100px o'lchamidan kichik ekranga */
 @media (max-width: 1100px) {
     .nav-menu {
         gap: 15px;
     }
-}
-
-/* 1000px o'lchamidan kichik ekranga */
-@media (max-width: 1000px) {
-    .nav-menu {
-        gap: 10px;
+    .logo_burger{
+        display: block;
     }
 }
 
-/* 900px o'lchamidan kichik ekranga */
+@media (max-width: 1005px) {
+    .nav-menu {
+        gap: 10px;
+    }
+    .nav-logo p{
+        font-size: 30px;
+    }
+}
+
 @media (max-width: 900px) {
     .nav-menu {
         gap: 5px;
     }
 }
 
-/* 800px o'lchamidan kichik ekranga */
 @media (max-width: 800px) {
     .nav-menu {
         gap: 0;
@@ -166,7 +174,6 @@
     }
 }
 
-/* 700px o'lchamidan kichik ekranga */
 @media (max-width: 700px) {
     .nav-menu {
         display: none;
@@ -175,13 +182,11 @@
     .nav-login-cart {
         justify-content: center;
     }
-
-    .darkMode {
-        display: none;
+    .nav-logo p{
+        font-size: 20px;
     }
 }
 
-/* 600px o'lchamidan kichik ekranga */
 @media (max-width: 600px) {
     .nav-logo p {
         font-size: 30px;
@@ -195,7 +200,6 @@
     }
 }
 
-/* 500px o'lchamidan kichik ekranga */
 @media (max-width: 500px) {
     .nav-logo p {
         font-size: 24px;
@@ -208,8 +212,7 @@
     }
 }
 
-/* 400px o'lchamidan kichik ekranga */
-@media (max-width: 400px) {
+    @media (max-width: 400px) {
     .nav-logo p {
         font-size: 20px;
     }
@@ -219,4 +222,25 @@
         height: 35px;
         font-size: 12px;
     }
+}
+
+@media (min-width: 1100px) {
+  .burger-icon {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex !important;
+    flex-direction: row;
+    position: static; 
+    background-color: transparent;
+  }
+
+  .nav-menu li {
+    margin: 0 15px;
+  }
+
+  .li1 hr {
+    display: block;
+  }
 }

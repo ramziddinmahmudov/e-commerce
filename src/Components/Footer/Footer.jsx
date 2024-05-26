@@ -1,23 +1,27 @@
 import React from 'react'
 import './Footer.css'
-import footer_logo from '../Asset/icon.jpg'
+import footer_logo from '../Asset/Screenshot_14-5-2024_10186_.jpeg'
 import instagram_icon from '../Asset/instagram_icon.png'
 import pintester_icon from '../Asset/pintester_icon.png'
 import whatsapp_icon from '../Asset/whatsapp_icon.png'
+import {Link, NavLink} from 'react-router-dom'
+import  { useContext, useRef, useState } from "react";
 
 const Footer = () => {
+  const [menu, setmenu] = useState("shop");
+  const menuRef = useRef();
+
   return (
     <div className='footer'>
       <div className="footer-logo">
-        <img src={footer_logo} alt="" className="kom"/>
-        <p>SHOPPER</p>
+        <img src={footer_logo} alt="" className="kom1"/>
       </div>
       <ul className="footer-links">
-        <li>Company</li>
-        <li>Products</li>
-        <li>Offices</li>
-        <li>About</li>
-        <li>Contact</li>
+        <NavLink to="/company"><li ref={menuRef}>Company</li></NavLink>
+        <NavLink to="/office"><li ref={menuRef}>Office</li></NavLink>
+        <NavLink to="/"><li ref={menuRef}>Shop</li></NavLink>
+        {menu === "shop" ? <hr /> : <></>}
+        <NavLink to="/contact"><li ref={menuRef}>Contact</li></NavLink>
       </ul>
       <div className="footer-social-icon">
           <div className="footer-icons-container">
@@ -32,7 +36,7 @@ const Footer = () => {
       </div>
         <div className="footer-copyright">
             <hr />
-            <p>Copyright @ 2024 - ALL Right Reserved.</p>
+            <p>Copyright @ 2024 - Ramziddin_Mahmudov</p>
         </div>
     </div>
   )

@@ -4,10 +4,10 @@
 }
 
 body {
-  background: #fde1ff;
   font-family: 'poppins';
- 
+  transition: 0.9s;
 }
+
 ::-webkit-scrollbar {
   width: 12px;
 }
@@ -23,8 +23,4 @@ body {
 
 ::-webkit-scrollbar-track {
   background-color: #f1f1f1;
-}
-
-body{
-  transition: 0.5s;
 }

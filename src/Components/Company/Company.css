@@ -1,0 +1,36 @@
+.company {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .about-us, .mission, .values, .history {
+    margin-bottom: 20px;
+  }
+  
+  .h1_header, h2_header {
+    color: var(--tectColor);
+  }
+  
+  .p_header, .ccc {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .ccc {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .hhh {
+    margin-bottom: 10px;
+  }
+  
+  strong {
+    color: var(--tectColor);
+  }
+  

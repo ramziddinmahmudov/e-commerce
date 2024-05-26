@@ -3,12 +3,14 @@
     --backColor: white;
     --hrColor: #e2e2e2;
     --popular:#252525;
+    --redColor:black;
 }
-.darkaMode{
+.darkMode{
     --textColor: white;
-    --backColor: #222020;
+    --backColor:  #222020;
     --hrColor: black;
     --popular: white;
+    --redColor:red;
 }
 *{
     margin:0;
@@ -20,3 +22,17 @@
     margin: auto;
 }
 
+#Parent{
+    width: 100%;
+    background-color: var(--backColor);
+    color: var(--textColor);
+    transition: 0.5s;
+}
+
+body{
+    transition: 0.5s;
+}
+
+.dev-banner{
+    display: none;
+}

@@ -13,7 +13,7 @@
 }
 
 .newsletter h1{
-    color: #454545;
+    color: var(--textColor);
     font-size: 55px;
     font-weight: 600;
     text-align: center;
@@ -21,7 +21,7 @@
 }
 
 .newsletter p{
-color: #454545;
+color: var(--textColor);
 font-size: 20px;
 text-align: center;
 }

@@ -55,7 +55,7 @@ function Jamoa() {
   }
   return (
     <>
-      <h1 className="h1_katta">Bizning Jamoa</h1>
+      <h1 className="h1_katta">Our Team</h1>
       <Swiper
         slidesPerView={3}
         spaceBetween={30}

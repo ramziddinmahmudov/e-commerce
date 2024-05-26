@@ -1,0 +1,12 @@
+.btn4{
+    text-decoration: none;
+    width: 200px;
+    height: 50px;
+}
+.con5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}

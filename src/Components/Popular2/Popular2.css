@@ -32,12 +32,11 @@
     gap: 30px;
 }
 
-/* Media qurilmalari */
 
 /* 1400px o'lchamidan kichik ekranga */
 @media (max-width: 1400px) {
     .popular {
-        height: 250px;
+        height: 400px;
     }
     .popular h1 {
         font-size: 40px;
@@ -58,7 +57,7 @@
 /* 1300px o'lchamidan kichik ekranga */
 @media (max-width: 1300px) {
     .popular {
-        height: 250px;
+        height: 350px;
     }
     .popular h1 {
         font-size: 40px;
@@ -79,7 +78,7 @@
 /* 1200px o'lchamidan kichik ekranga */
 @media (max-width: 1200px) {
     .popular {
-        height: 250px;
+        height: 350px;
     }
     .popular h1 {
         font-size: 40px;
@@ -100,7 +99,7 @@
 /* 1100px o'lchamidan kichik ekranga */
 @media (max-width: 1100px) {
     .popular {
-        height: 250px;
+        height: 300px;
     }
     .popular h1 {
         font-size: 40px;
@@ -121,7 +120,7 @@
 /* 1000px o'lchamidan kichik ekranga */
 @media (max-width: 1000px) {
     .popular {
-        height: 250px;
+        height: 350px;
     }
     .popular h1 {
         font-size: 40px;
@@ -142,7 +141,7 @@
 /* 900px o'lchamidan kichik ekranga */
 @media (max-width: 200px) {
     .popular {
-        height: 250px;
+        height: 350px;
     }
     .popular h1 {
         font-size: 30px;
@@ -160,7 +159,7 @@
 /* 800px o'lchamidan kichik ekranga */
 @media (max-width: 800px) {
     .popular {
-        height: 250px;
+        height: 350px;
         gap: 6px;
     }
     .popular h1 {
@@ -178,7 +177,7 @@
 /* 700px o'lchamidan kichik ekranga */
 @media (max-width: 700px) {
     .popular {
-        height: 250px;
+        height: 350px;
         gap: 6px;
     }
     .popular h1 {
@@ -196,7 +195,7 @@
 /* 600px o'lchamidan kichik ekranga */
 @media (max-width: 600px) {
     .popular {
-        height: 250px;
+        height: 350px;
         gap: 6px;
     }
     .popular h1 {
@@ -214,7 +213,7 @@
 /* 500px o'lchamidan kichik ekranga */
 @media (max-width: 500px) {
     .popular {
-        height: 250px;
+        height: 350px;
     }
     .popular-item {
         display: grid;
@@ -226,7 +225,7 @@
 /* 400px o'lchamidan kichik ekranga */
 @media (max-width: 400px) {
     .popular {
-        height: 250px;
+        height: 350px;
     }
     .popular-item {
         display: grid;
