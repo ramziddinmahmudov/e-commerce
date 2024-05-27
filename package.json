@@ -27,9 +27,13 @@
     "@mui/material": "^5.15.16",
     "@react-icons/all-files": "^4.1.0",
     "@stripe/react-stripe-js": "^2.7.1",
-    "@stripe/stripe-js": "^3.4.0",
+    "@stripe/stripe-js": "^3.4.1",
     "aos": "^2.3.4",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
     "framer-motion": "^11.1.7",
+    "helmet": "^7.1.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-google-recaptcha": "^3.1.0",
@@ -38,6 +42,7 @@
     "react-slick": "^0.30.2",
     "react-toastify": "^10.0.5",
     "slick-carousel": "^1.8.1",
+    "stripe": "^15.8.0",
     "styled-component": "^2.8.0",
     "styled-components": "^6.1.11",
     "swiper": "^11.1.1"
@@ -56,5 +61,10 @@
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.3",
     "vite": "^5.0.8"
-  }
+  },
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "main": "postcss.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

@@ -1,28 +1,27 @@
 // server.js
-const express = require('express');
-const stripe = require('stripe')('YOUR_SECRET_STRIPE_KEY');
-const bodyParser = require('body-parser');
-const app = express();
 
+const express = require('express');
+const bodyParser = require('body-parser');
+const stripe = require('stripe')('your_stripe_secret_key');
+
+const app = express();
 app.use(bodyParser.json());
 
-app.post('/create-payment-intent', async (req, res) => {
-  const { paymentMethodId, amount } = req.body;
-
+app.post('/pay', async (req, res) => {
   try {
-    const paymentIntent = await stripe.paymentIntents.create({
-      amount: amount, // to'lov summasi sentlarda
+    const { amount, token } = req.body;
+
+    const charge = await stripe.charges.create({
+      amount: amount,
       currency: 'usd',
-      payment_method: paymentMethodId,
-      confirm: true,
+      source: token,
     });
 
-    res.send({ success: true });
-  } catch (error) {
-    res.send({ error: error.message });
+    res.status(200).json({ message: 'To\'lov muvaffaqiyatli amalga oshirildi' });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
   }
 });
 
-app.listen(3001, () => {
-  console.log('Server 3001 portda ishlamoqda');
-});
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`Server ${PORT}-portda ishga tushirildi`));

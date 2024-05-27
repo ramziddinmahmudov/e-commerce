@@ -7,7 +7,7 @@
 }
 
 .relatedproducts h1{
- color: #171717;
+ color: var(--textColor);
  font-size: 50px;
  font-weight: 600;   
 }
@@ -16,11 +16,16 @@
     width: 200px;
     height: 6px;
     border-radius: 10px;
-    background: #252525;
+    background: var(--textColor);
 }
 
 .relatedproducts-item{
     margin-top: 50px;
     display: flex;
     gap: 30px;
+}
+@media(max-width:580px){
+    .relatedproducts-item{
+        display: block;
+    }
 }

@@ -12,13 +12,15 @@ import samsung_banner from "./Components/Asset/samsung banner.avif";
 import iphone_banner from "./Components/Asset/iphone banner.png";
 import nokia_banner from "./Components/Asset/nokia banner.jpg";
 import { Route, Routes } from "react-router-dom";
-import Bank from "./Components/Bank/CheckoutForm";
+import Bank from "./Components/Bank/PaymentForm"
 import NotFound from "./Components/NotFound/NotFound";
-import Office from "./Components/Office/Office"
-import Company from "./Components/Company/Company"
-import { SignedIn, SignedOut, RedirectToSignIn } from "@clerk/clerk-react";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import Office from "./Components/Office/Office";
+import Company from "./Components/Company/Company";
+import styled from 'styled-components';
+import { stripePromise } from './StripeConfig';
+// import { SignedIn, SignedOut, RedirectToSignIn } from "@clerk/clerk-react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
   const [darkmode, setDarkmode] = useState(false);
@@ -39,37 +41,32 @@ function App() {
   useEffect(() => {
     AOS.init({
       duration: 1200,
-      easing: 'ease-in-out',
+      easing: "ease-in-out",
       once: true,
     });
   }, []);
 
-
   return (
     <div id="Parent" className={darkmode ? "darkMode" : ""}>
-      <SignedOut>
-        <RedirectToSignIn />
-      </SignedOut>
-      <SignedIn>
         <Navbar darkmode={darkmode} handleDarkMode={handleDarkMode} />
         <div className="con">
           <Routes>
-            <Route path="/" element={<Shop/>} />
+            <Route path="/" element={<Shop />} />
             <Route
               path="/samsung"
               element={
-                <Shopcategory banner={samsung_banner} category="samsung"/>
+                <Shopcategory banner={samsung_banner} category="samsung" />
               }
             />
             <Route
               path="/iphone"
               element={
-                <Shopcategory banner={iphone_banner} category="iphone"/>
+                <Shopcategory banner={iphone_banner} category="iphone" />
               }
             />
             <Route
               path="/nokia"
-              element={<Shopcategory banner={nokia_banner} category="nokia"/>}
+              element={<Shopcategory banner={nokia_banner} category="nokia" />}
             />
             <Route path="/product" element={<Product />}>
               <Route path=":productId" element={<Product />} />
@@ -78,7 +75,7 @@ function App() {
             <Route
               path="/checkout"
               element={
-                <Elements>
+                <Elements stripe={stripePromise}>
                   <Bank />
                 </Elements>
               }
@@ -90,7 +87,6 @@ function App() {
           </Routes>
         </div>
         <Footer />
-      </SignedIn>
     </div>
   );
 }

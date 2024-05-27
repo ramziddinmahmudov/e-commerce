@@ -7,7 +7,7 @@ import  { useEffect } from 'react';
 
 const Hero = () => {
   return (
-    <div className="hero" data-aos="fade-down">
+    <div className="hero" data-aos="fade-up">
       <div className="hero-left">
         <h2>JUST SUPER SHOP</h2>
         <div>

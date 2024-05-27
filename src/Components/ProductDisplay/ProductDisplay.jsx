@@ -39,20 +39,20 @@ const ProductDisplay = (props) => {
           <div className="productdisplay-right-price-new">${product.new_price}</div>
         </div>
         <div className="productdisplay-right-description">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus fuga labore ratione ullam, ut voluptatem.
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus fuga labore ratione ullam, ut voluptatem. this product is very welllll
         </div>
         <div className="productdisplay-right-size">
           <h1>Select Size</h1>
           <div className="productdisplay-right-sizes">
-            <div>S</div>
-            <div>M</div>
-            <div>L</div>
-            <div>XL</div>
-            <div>XXl</div>
+            <div className='sizes'>S</div>
+            <div className='sizes'>M</div>
+            <div className='sizes'>L</div>
+            <div className='sizes'>XL</div>
+            <div className='sizes'>XXl</div>
           </div>
         </div>
-        <button onClick={()=>{addToCart(product.id)}} className="button1" >ADD TO CART</button>
-        <p className="productdisplay-right-category"><span>Categroy: </span>Samsung</p>
+        <button onClick={()=>{addToCart(product.id)}} className="button1111" >ADD TO CART</button>
+        <p className="productdisplay-right-category"><span>Categroy: </span>{product.category}</p>
         <p className="productdisplay-right-category"><span>Tags: </span>Modern</p>
       </div>
     </div>

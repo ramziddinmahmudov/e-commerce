@@ -8,7 +8,6 @@ import logo_burger from '../Asset/menu-burger-horizontal-svgrepo-com.svg'
 import { Link } from "react-router-dom";
 import { ShopContext } from "../../Context/ShopContext";
 import nav_dropdown from "../Asset/drp_down.png";
-import { UserButton } from "@clerk/clerk-react";
 
 const Navbar = ({darkmode,handleDarkMode}) => {
   const [menu, setmenu] = useState("shop");
@@ -90,7 +89,6 @@ const Navbar = ({darkmode,handleDarkMode}) => {
         <div className="nav-cart-count">{getTotalCartItems()}</div>
       </div>
       <img src={Dark} alt=""  className="btnnnn" onClick={handleDarkMode}/>
-      <UserButton />
       <img src={logo_burger} alt="" className="logo_burger" onClick={toggleMenu}/>
     </div>
   );

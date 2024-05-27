@@ -32,3 +32,9 @@
     padding-bottom: 70px;
     
 }
+
+@media(max-width:580px){
+    .descriptionbox{
+        margin: 20px 60px;   
+    }
+}

@@ -25,7 +25,6 @@
     width: 10px;
     height: 20px;
 }
-
 .shopcategory-indexSort p {
     font-weight: 600;
 }
@@ -36,7 +35,6 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     row-gap: 80px;
 }
-
 .shopcategory-loadmore {
     display: flex;
     justify-content: center;
