@@ -9,11 +9,18 @@ import { Link } from "react-router-dom";
 import { ShopContext } from "../../Context/ShopContext";
 import nav_dropdown from "../Asset/drp_down.png";
 
-const Navbar = ({darkmode,handleDarkMode}) => {
+const Navbar = ({darkmode,handleDarkMode,authenticated, user,onLogout }) => {
   const [menu, setmenu] = useState("shop");
   const { getTotalCartItems } = useContext(ShopContext);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef();
+  const [showDropdown, setShowDropdown] = useState(false);
+  
+  
+  
+  const toggleDropdown = () => {
+    setShowDropdown(!showDropdown);
+  };
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -89,6 +96,20 @@ const Navbar = ({darkmode,handleDarkMode}) => {
         <div className="nav-cart-count">{getTotalCartItems()}</div>
       </div>
       <img src={Dark} alt=""  className="btnnnn" onClick={handleDarkMode}/>
+      {authenticated && (
+        <div className="navbar-user">
+          <button className="user-button" onClick={toggleDropdown}>A</button>
+          {showDropdown && (
+            <div className="dropdown-menu">
+              <span>Name: {user.username}</span>
+              <span>Email: {user.email}</span>
+              <span>Password: {user.password}</span>
+              <button className="logout-button" onClick={onLogout}>Logout</button>
+            </div>
+          )}
+        </div>
+      )}
+
       <img src={logo_burger} alt="" className="logo_burger" onClick={toggleMenu}/>
     </div>
   );

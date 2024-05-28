@@ -18,13 +18,13 @@
 .dark {
     width: 70px;
 }
+
 a{
     color: var(--redColor);
 }
 .nav-logo {
     display: flex;
     align-items: center;
-    gap: 10px;
 }
 .logo_burger{
     width: 40px;
@@ -32,7 +32,7 @@ a{
 }
 .nav-logo p {
     color: var(--redColor);
-    font-size: 38px;
+    font-size: 30px;
     font-weight: 600;
     list-style: none;
 }
@@ -40,9 +40,9 @@ a{
 .nav-menu {
     align-items: center;
     list-style: none;
-    gap: 50px;
+    gap: 30px;
     color: var(--textColor);
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
     display: none;
     flex-direction: column;
@@ -59,7 +59,6 @@ a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 3px;
     color: var(--textColor);
     cursor: pointer;
 }
@@ -116,10 +115,11 @@ a{
 
 .btnnnn {
     width: 40px;
+    cursor: pointer;
 }
 
 .kom {
-    width: 100px;
+    width: 80px;
     height: 100px;
 }
 @media (max-width: 1400px) {
@@ -244,3 +244,58 @@ a{
     display: block;
   }
 }
+
+
+.navbar-brand {
+    font-size: 1.5em;
+  }
+  
+  .navbar-toggle {
+    cursor: pointer;
+  }
+  
+  .navbar-user {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-user span {
+    margin-right: 10px;
+  }
+  
+  .user-button,
+  .logout-button {
+    padding: 5px 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+  }
+  .user-button{
+    border-radius: 50%;
+    width: 40px;
+    text-align: center;
+  }
+  .user-button:hover,
+  .logout-button:hover {
+    background-color: #2980b9;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 40px;
+    right: 2px;
+    width: 300px;
+    background-color: var(--backColor);
+    color: var(--textColor);
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdown-menu span {
+    display: block;
+    margin-bottom: 10px;
+  }

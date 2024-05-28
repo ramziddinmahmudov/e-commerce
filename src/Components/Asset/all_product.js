@@ -1,4 +1,4 @@
-import p1_img from "./iphone6plus.png";
+import p1_img from "./iphone15pro.png";
 import p2_img from "./iphone14.png";
 import p3_img from "./iphone13.png";
 import p4_img from "./iphone12.png";
@@ -9,7 +9,7 @@ import p8_img from "./iphone8.png";
 import p9_img from "./iphone7.png";
 import p10_img from "./iphone6.png";
 import p11_img from "./iphone5.png";
-import p12_img from "./iphone4.png";
+import p12_img from "./iphoneprO.png";
 
 import p13_img from "./All_colours.0.jpg";
 import p14_img from "./All_colours.0.jpg";

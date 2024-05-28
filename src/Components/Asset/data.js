@@ -1,7 +1,7 @@
-import p1_img from './pro.jpg'
-import p2_img from './pro.jpg'
-import p3_img from './pro.jpg'
-import p4_img from './pro.jpg'
+import p1_img from './iphone14.png'
+import p2_img from './iphone13.png'
+import p3_img from './iphone12.png'
+import p4_img from './iphone15pro.png'
 
 let data_product = [
   {
