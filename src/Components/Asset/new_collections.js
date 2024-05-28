@@ -1,10 +1,10 @@
-import p1_img from "./pro.jpg";
+import p1_img from "./iphoneprO.png";
 import p2_img from "./nok.avif";
-import p3_img from "./All_colours.0.jpg";
-import p4_img from "./pro.jpg";
-import p5_img from "./All_colours.0.jpg";
-import p6_img from "./pro.jpg";
-import p7_img from "./All_colours.0.jpg";
+import p3_img from "./s9.png";
+import p4_img from "./iphone7.png";
+import p5_img from "./s15.png";
+import p6_img from "./iphone14.png";
+import p7_img from "./s18.png";
 import p8_img from "./nok.avif";
 let new_collections = [
   {
@@ -15,7 +15,7 @@ let new_collections = [
     old_price: 80.5,
   },
   {
-    id: 35,
+    id: 28,
     name: "Nokia 3310",
     image: p2_img,
     new_price: 85.0,
@@ -29,7 +29,7 @@ let new_collections = [
     old_price: 100.5,
   },
   {
-    id: 8,
+    id: 9,
     name: "Iphone 134",
     image: p4_img,
     new_price: 100.0,
@@ -42,7 +42,7 @@ let new_collections = [
     new_price: 50.0,
     old_price: 80.5,
   },
-  {
+  { 
     id: 2,
     name: "Iphone 7",
     image: p6_img,

@@ -6,7 +6,9 @@
     align-items: center;
     justify-content: center;
   }
-  
+  .productdisplay-main-img{
+    width: 400px;
+  }
   .productdisplay-left {
     display: flex;
     gap:30px;
