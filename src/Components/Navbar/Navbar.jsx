@@ -1,6 +1,7 @@
 import React, { useContext, useRef, useState } from "react";
 import "./Navbar.css";
 import './App.css'
+import Search_img from "../Asset/search.jpg"
 import Dark from "./pp.png"
 import logo from "../Asset/phone-svgrepo-com.svg";
 import cart_icon from "../Asset/cart_icon.png";
@@ -15,6 +16,7 @@ const Navbar = ({darkmode,handleDarkMode,authenticated, user,onLogout }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef();
   const [showDropdown, setShowDropdown] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
   
   
   

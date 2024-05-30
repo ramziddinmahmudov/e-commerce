@@ -18,7 +18,9 @@
 .dark {
     width: 70px;
 }
-
+.serch_img{
+    width: 70px;
+}
 a{
     color: var(--redColor);
 }

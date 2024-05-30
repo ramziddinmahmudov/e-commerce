@@ -1,7 +1,7 @@
-import p1_img from './nok.avif'
-import p2_img from './nok.avif'
-import p3_img from './nok.avif'
-import p4_img from './nok.avif'
+import p1_img from './nokia1.png'
+import p2_img from './nokia2.png'
+import p3_img from './nokia3.png'
+import p4_img from './nokia4.png'
 
 let data_product = [
     {

@@ -18,6 +18,7 @@ import Company from './Components/Company/Company';
 import Auth from './Components/Login/Auth';
 import Loader from './Components/Loader/Loader';
 import { stripePromise } from './StripeConfig';
+import SearchBar from "./Components/Searchbar/Search"
 
 import samsung_banner from './Components/Asset/samsung banner.avif';
 import iphone_banner from './Components/Asset/iphone banner.png';
@@ -108,6 +109,7 @@ function App() {
           <Route path="/company" element={<Company />} />
         </Routes>
       </div>
+      <SearchBar/>
       <Footer />
       {showSuccess && (
         <div className="success-notification">

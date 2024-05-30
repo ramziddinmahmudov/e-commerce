@@ -24,18 +24,18 @@ import p22_img from "./s23.png";
 import p23_img from "./s24.png";
 import p24_img from "./s199.png";
 
-import p25_img from "./nok.avif";
-import p26_img from "./nok.avif";
-import p27_img from "./nok.avif";
-import p28_img from "./nok.avif";
-import p29_img from "./nok.avif";
-import p30_img from "./nok.avif";
-import p31_img from "./nok.avif";
-import p32_img from "./nok.avif";
-import p33_img from "./nok.avif";
-import p34_img from "./nok.avif";
-import p35_img from "./nok.avif";
-import p36_img from "./nok.avif";
+import p25_img from "./nokia1.png";
+import p26_img from "./nokia2.png";
+import p27_img from "./nokia3.png";
+import p28_img from "./nokia4.png";
+import p29_img from "./nokia5.png";
+import p30_img from "./nokia6.png";
+import p31_img from "./nokia7.png";
+import p32_img from "./nokia8.png";
+import p33_img from "./nokia9.png";
+import p34_img from "./nokia10.png";
+import p35_img from "./nokia11.png";
+import p36_img from "./nokia12.png";
 
 let all_product = [
   {

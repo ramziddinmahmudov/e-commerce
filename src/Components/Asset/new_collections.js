@@ -1,11 +1,11 @@
 import p1_img from "./iphoneprO.png";
-import p2_img from "./nok.avif";
+import p2_img from "./nokia5.png";
 import p3_img from "./s9.png";
 import p4_img from "./iphone7.png";
 import p5_img from "./s15.png";
 import p6_img from "./iphone14.png";
 import p7_img from "./s18.png";
-import p8_img from "./nok.avif";
+import p8_img from "./nokia4.png";
 let new_collections = [
   {
     id: 12,
@@ -15,7 +15,7 @@ let new_collections = [
     old_price: 80.5,
   },
   {
-    id: 28,
+    id: 29,
     name: "Nokia 3310",
     image: p2_img,
     new_price: 85.0,
