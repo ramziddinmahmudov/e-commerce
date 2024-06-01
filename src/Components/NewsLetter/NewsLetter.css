@@ -1,4 +1,5 @@
-.newsletter{
+/* Asosiy CSS kodlari */
+.newsletter {
     width: 60%;
     display: flex;
     height: 40vh;
@@ -12,33 +13,33 @@
     margin-bottom: 100px;
 }
 
-.newsletter h1{
+.newsletter h1 {
     color: var(--textColor);
     font-size: 55px;
     font-weight: 600;
     text-align: center;
-
 }
 
-.newsletter p{
-color: var(--textColor);
-font-size: 20px;
-text-align: center;
+.newsletter p {
+    color: var(--textColor);
+    font-size: 20px;
+    text-align: center;
 }
 
-.newsletter div{
+.orab {
     display: flex;
     align-items: center;
     justify-content: center;
     background: white;
-    width: 730px;
+    width: auto;
     height: 70px;
     border-radius: 80px;
-    border:  1px solid #e3e3e3;
+    border: 1px solid #e3e3e3;
 }
-.newsletter .input1{
-    width: 500px;
-    margin-left: 30px;
+
+.newsletter .input1 {
+    width: 100%;
+    padding-left: 30px;
     border: none;
     outline: none;
     font-family: Poppins;
@@ -46,7 +47,7 @@ text-align: center;
     background: transparent;
 }
 
-.newsletter div button{
+.newsletter div button {
     width: 210px;
     height: 70px;
     border-radius: 80px;
@@ -54,4 +55,145 @@ text-align: center;
     color: white;
     font-size: 16px;
     cursor: pointer;
+}
+
+/* Media query 1400px dan past ekranlar uchun */
+@media (max-width: 1400px) {
+    .newsletter {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .newsletter {
+        margin-top: 90px;
+        margin-bottom: 90px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .newsletter {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .newsletter {
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .newsletter {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 900px) {
+    .newsletter {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 800px) {
+    .newsletter {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .orab{
+        width: 400px;
+    }
+}
+
+@media (max-width: 700px) {
+    .newsletter {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .orab{
+        width: 400px;
+    }
+}
+
+@media (max-width: 600px) {
+    .newsletter {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 0px 20px;
+        width: 90%;
+    }
+    
+    .newsletter div {
+        width: 100%;
+        height: 60px;
+        border-radius: 30px;
+    }
+
+    .newsletter .input1 {
+        width: 70%;
+        margin-left: 10px;
+    }
+
+    .newsletter div button {
+        width: 30%;
+        height: 60px;
+        border-radius: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .newsletter {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 0px 10px;
+        width: 100%;
+    }
+
+    .newsletter div {
+        width: 100%;
+        height: 50px;
+        border-radius: 25px;
+    }
+
+    .newsletter .input1 {
+        width: 65%;
+        margin-left: 5px;
+    }
+
+    .newsletter div button {
+        width: 35%;
+        height: 50px;
+        border-radius: 25px;
+    }
+}
+
+@media (max-width: 400px) {
+    .newsletter {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding: 0px 5px;
+        width: 100%;
+    }
+
+    .newsletter div {
+        width: 100%;
+        height: 40px;
+        border-radius: 20px;
+    }
+
+    .newsletter .input1 {
+        width: 60%;
+        margin-left: 5px;
+    }
+
+    .newsletter div button {
+        width: 40%;
+        height: 40px;
+        border-radius: 20px;
+    }
 }

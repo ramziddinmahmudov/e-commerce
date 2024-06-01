@@ -30,10 +30,9 @@
 
 .shopcategory-products {
     display: grid;
-    align-items: center;
-    margin: 100PX;
     justify-content: center;
-    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-columns:repeat(auto-fit,500px);
+    align-items: center;
 }
 .shopcategory-products img{
     width: 200px;
@@ -54,7 +53,9 @@
     font-size: 18px;
     font-weight: 500;
 }
-
+.shop-category{
+    margin: auto;
+}
 @media (max-width: 1500px) {
     .shopcategory-banner {
         margin: 10px 150px;

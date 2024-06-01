@@ -1,48 +1,46 @@
 .hero{
-    display: flex;
-    padding: 50px;
-    gap:100px;
-    background: rgb(228,174,238);
-    background: radial-gradient(circle, rgba(228,174,238,1) 0%, rgba(82,80,159,1) 0%, rgba(222,148,199,1) 100%, rgba(0,117,255,1) 100%);
+    display: grid;
+    grid-template-columns: repeat(auto-fit,500px);
+    padding: 20px;
+    gap: 90px;
+    align-items: center;
+    justify-content: center;
 }
-
-.hero-left{
-    line-height: 1.1;
-
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .hero-left h2{
-    color: blanchedalmond;
     font-size: 26px;
-    font-weight: 600;
 }
 .hero-left p{
-    color: blanchedalmond;
-    font-size: 100px;
-    font-weight: 700;
+    font-size: 25px;
 }
 .hero-hand-icon{
-display: flex;
-align-items: center;
-gap: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
 }
 .hero_image1{
-    width: 700px;
+    width: 400px;
 }
 .hero-hand-icon img{
-    width: 105px;
-
+    width: 70px;
 }
 .hero-latest-btn{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
-    width: 310px;
+    gap: 10px;
+    width: 220px;
     height: 70px;
     border-radius: 75px;
     margin-top: 30px;
-    background: #ff4141;
-    color: white;
+    background: blue;
+    color: var(--backColor);
     font-size: 22px;
     font-weight: 500;
     cursor: pointer;

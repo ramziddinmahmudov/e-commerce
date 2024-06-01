@@ -1,18 +1,7 @@
-.swiper {
-  width: 80%;
-  height: 400px;
-}
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-}
-
-.swiper-slide img {
-  display: block;
-  object-fit: cover;
-}
 .img4{
-  width: 800px;
-  height: 600px;
+  width:300px;
+}
+.swiper-slide .swiper-slide-next{
+    width: 1000px;
 }

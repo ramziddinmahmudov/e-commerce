@@ -1,7 +1,7 @@
 .button {
     display: inline-block;
     padding: 10px 20px;
-    margin: 5px;
+
     background-color: #f0f0f0;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -13,10 +13,11 @@
   .input{
     width: 300px;
     padding: 10px 20px;
-    margin-left: 590px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: auto;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 2px solid red;
   }
   .product_seach_res{
@@ -31,6 +32,9 @@
   }
   .btn_s{
     margin-left: 200px;
+  }
+  .Search_w{
+    padding-bottom: 20px;
   }
   .product-item {
     display: flex;

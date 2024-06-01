@@ -2,8 +2,7 @@ import React from "react";
 import "./Hero.css";
 import hand_icon from "../Asset/hand_icon.png";
 import arrow_icon from "../Asset/arrow.png";
-import Slide from "../page3/page2.jsx";
-import  { useEffect } from 'react';
+import hero_img from "../Asset/iphone14.png"
 
 const Hero = () => {
   return (
@@ -15,15 +14,17 @@ const Hero = () => {
             <p>new</p>
             <img src={hand_icon} alt="" />
           </div>
-          <p>collection</p>
-          <p>for everyone</p>
+            <p>collection</p>
+            <p>for everyone</p>
         </div>
         <div className="hero-latest-btn">
           <div>Latest Collection</div>
           <img src={arrow_icon} alt="" />
         </div>
       </div>
-      <Slide />
+      <div className="hero-right">
+          <img src={hero_img} alt="" className="hero_image1"/>
+      </div>
     </div>
   );
 };

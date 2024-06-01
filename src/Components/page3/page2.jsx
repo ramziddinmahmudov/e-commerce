@@ -1,10 +1,9 @@
 import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import lod from '../Asset/All_colours.0.jpg'
-import lod1 from '../Asset/pro.jpg'
-import lod3 from '../Asset/nok.avif'
-// Import Swiper styles
+import lod from '../Asset/iphone14.png'
+import lod1 from '../Asset/s24.png'
+import lod3 from '../Asset/nokia1.png'
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';

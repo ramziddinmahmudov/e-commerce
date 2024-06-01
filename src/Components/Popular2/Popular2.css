@@ -159,7 +159,7 @@
 /* 800px o'lchamidan kichik ekranga */
 @media (max-width: 800px) {
     .popular {
-        height: 350px;
+        height: 200px;
         gap: 6px;
     }
     .popular h1 {
@@ -177,7 +177,7 @@
 /* 700px o'lchamidan kichik ekranga */
 @media (max-width: 700px) {
     .popular {
-        height: 350px;
+        height: 200px;
         gap: 6px;
     }
     .popular h1 {

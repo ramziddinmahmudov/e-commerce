@@ -1,7 +1,7 @@
 import React, { useContext, useRef, useState } from "react";
 import "./Navbar.css";
 import './App.css'
-import Search_img from "../Asset/search.jpg"
+import Sun from "../Asset/sun.svg"
 import Dark from "./pp.png"
 import logo from "../Asset/phone-svgrepo-com.svg";
 import cart_icon from "../Asset/cart_icon.png";
@@ -16,7 +16,6 @@ const Navbar = ({darkmode,handleDarkMode,authenticated, user,onLogout }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef();
   const [showDropdown, setShowDropdown] = useState(false);
-  const [searchOpen, setSearchOpen] = useState(false);
   
   
   
@@ -97,7 +96,7 @@ const Navbar = ({darkmode,handleDarkMode,authenticated, user,onLogout }) => {
         </Link>
         <div className="nav-cart-count">{getTotalCartItems()}</div>
       </div>
-      <img src={Dark} alt=""  className="btnnnn" onClick={handleDarkMode}/>
+      <img src={darkmode ? Sun : Dark} alt="" className="btnnnn" onClick={handleDarkMode}/>
       {authenticated && (
         <div className="navbar-user">
           <button className="user-button" onClick={toggleDropdown}>A</button>
@@ -112,7 +111,7 @@ const Navbar = ({darkmode,handleDarkMode,authenticated, user,onLogout }) => {
         </div>
       )}
 
-      <img src={logo_burger} alt="" className="logo_burger" onClick={toggleMenu}/>
+      <img src={logo_burger} className="logo_burger" onClick={toggleMenu}/>
     </div>
   );
 };
