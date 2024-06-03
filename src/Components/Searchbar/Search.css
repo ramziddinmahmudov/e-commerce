@@ -28,6 +28,7 @@
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 20px;
+    margin-bottom: 50px;
     margin-left: 200px;
   }
   .btn_s{
@@ -50,4 +51,14 @@
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
+  }
+  @media(max-width:570px){
+    .product-list{
+      margin-left: 40px;
+    }
+  }
+  @media(max-width:640px){
+    .product-list{
+      margin-left: 80px;
+    }
   }

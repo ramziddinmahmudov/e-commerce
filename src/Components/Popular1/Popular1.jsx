@@ -4,7 +4,7 @@ import data_product from '../Asset/data1.js'
 import Item from '../Item/Item'
 const Popular = () => {
     return (
-        <div className='popular'>
+        <div className='popular' data-aos="fade-up">
             <h1>Popular In Nokia</h1>
             <hr />
             <div className="popular-item">

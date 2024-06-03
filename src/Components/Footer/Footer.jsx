@@ -1,11 +1,11 @@
 import React from 'react'
 import './Footer.css'
-import footer_logo from '../Asset/Screenshot_14-5-2024_10186_.jpeg'
+import footer_logo from '../Asset/3dphone.png'
 import instagram_icon from '../Asset/instagram_icon.png'
 import pintester_icon from '../Asset/pintester_icon.png'
 import whatsapp_icon from '../Asset/whatsapp_icon.png'
-import {Link, NavLink} from 'react-router-dom'
-import  { useContext, useRef, useState } from "react";
+import {NavLink} from 'react-router-dom'
+import  { useRef, useState } from "react";
 
 const Footer = () => {
   const [menu, setmenu] = useState("shop");

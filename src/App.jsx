@@ -36,10 +36,9 @@ function App() {
       setDarkmode(true);
     }
 
-    // Simulate an async operation (like fetching data)
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 7000);
 
     AOS.init({
       duration: 1200,

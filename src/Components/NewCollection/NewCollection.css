@@ -3,14 +3,12 @@
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-    margin-bottom: 100px;
 }
 
 .new-collections h1{
-    color: #ff4141;
+    color: var(--textColor);
     font-size: 50px;
     font-weight: 600;
-
 }
 .new-collections hr{
     width: 200px;
@@ -25,5 +23,6 @@
     align-items: center;
     justify-content: center;
     gap: 5px;
+    margin-top: 40px;
     grid-template-columns: repeat(auto-fit,350px);
 }

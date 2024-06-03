@@ -1,7 +1,7 @@
 import React from 'react';
 import './Loader.css';
 
-import img_loader from "../Asset/iphone14.png"
+import img_loader from "../Asset/3dphone.png"
 
 const Loader = () => {
   return (
