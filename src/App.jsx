@@ -90,7 +90,7 @@ function App() {
   return (
     <div id="Parent" className={darkmode ? 'darkMode' : ''}>
       <Navbar darkmode={darkmode} handleDarkMode={handleDarkMode} authenticated={authenticated} user={user} onLogout={handleLogout} />
-      <div className="con">
+      <div className="con" id='custom-cursor'>
         <Routes>
           <Route path="/" element={<Shop />} />
           <Route path="/samsung" element={<Shopcategory banner={samsung_banner} category="samsung" />} />

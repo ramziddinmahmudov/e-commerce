@@ -26,7 +26,6 @@
     width: 100%;
     background-color: var(--backColor);
     color: var(--textColor);
-    transition: 0.5s;
 }
 
 body{
@@ -69,3 +68,51 @@ body{
 }
 
   
+
+
+
+
+
+
+
+/* CSS for custom blue scrollbar with an image */
+
+/* For WebKit browsers like Chrome, Safari */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 255, 0.1); /* Light blue track color */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 255, 0.8); /* Fallback color if image fails to load */
+  border-radius: 6px; /* Rounded corners */
+  border: 2px solid rgba(0, 0, 255, 0.1); /* Space around thumb */
+  background-image: url('/path/to/image.png'); /* Path to your uploaded image */
+  background-size: cover;
+  filter: hue-rotate(180deg) saturate(200%); /* Adjust to make it blue if needed */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 255, 1); /* Blue color on hover */
+  background-image: url('/path/to/image.png'); /* Ensure the image is still applied */
+  background-size: cover;
+  filter: hue-rotate(180deg) saturate(200%); /* Adjust to make it blue if needed */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 255, 0.8) rgba(0, 0, 255, 0.1);
+}
+
+/* Optional: For IE and Edge */
+body {
+  -ms-overflow-style: none;  /* Hides the default scrollbar in IE and Edge */
+}
+
+body::-webkit-scrollbar {
+  display: none;  /* Hides the default scrollbar in WebKit browsers */
+}

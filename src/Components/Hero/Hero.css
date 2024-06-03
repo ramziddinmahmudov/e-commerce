@@ -131,6 +131,9 @@
     .hero-right{
         display: none;
     }
+    .hero-left{
+        display: none;
+    }
     .hero-left h2{
         font-size: 18px;
     }

@@ -201,6 +201,10 @@
 
 
 @media (max-width: 500px) {
+    .img_banner{
+        width: 300px;
+        margin-left: 50px;
+    }
     .shopcategory-banner {
         margin: 10px 0px;
     }

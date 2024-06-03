@@ -213,7 +213,7 @@
 /* 500px o'lchamidan kichik ekranga */
 @media (max-width: 500px) {
     .popular {
-        height: 350px;
+        height: 500px;
     }
     .popular-item {
         display: grid;

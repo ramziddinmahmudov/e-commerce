@@ -80,7 +80,7 @@
 }
 
 .cartitems-promocode p{
-    color: black;
+    color: var(--textColor);
 }
 .cartitem-promobox{
     width: 504px;

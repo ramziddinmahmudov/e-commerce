@@ -40,7 +40,7 @@ import p36_img from "./nokia12.png";
 let all_product = [
   {
     id: 1,
-    name: "Iphone 13",
+    name: "Iphone 15 pro",
     category: "iphone",
     image: p1_img,
     new_price: 50.0,
@@ -48,7 +48,7 @@ let all_product = [
   },
   {
     id: 2,
-    name: "Iphone 12",
+    name: "Iphone 14 pro max",
     category: "iphone",
     image: p2_img,
     new_price: 85.0,
@@ -56,7 +56,7 @@ let all_product = [
   },
   {
     id: 3,
-    name: "Iphone x",
+    name: "Iphone 13",
     category: "iphone",
     image: p3_img,
     new_price: 60.0,
@@ -72,7 +72,7 @@ let all_product = [
   },
   {
     id: 5,
-    name: "Iphone 12",
+    name: "Iphone XS",
     category: "iphone",
     image: p5_img,
     new_price: 85.0,
@@ -80,7 +80,7 @@ let all_product = [
   },
   {
     id: 6,
-    name: "Iphone 9",
+    name: "Iphone 11",
     category: "iphone",
     image: p6_img,
 
@@ -89,7 +89,7 @@ let all_product = [
   },
   {
     id: 7,
-    name: "iphone 6+",
+    name: "iphone X",
     category: "iphone",
     image: p7_img,
     new_price: 85.0,
@@ -113,7 +113,7 @@ let all_product = [
   },
   {
     id: 10,
-    name: "Iphone 9",
+    name: "Iphone 6",
     category: "iphone",
     image: p10_img,
     new_price: 85.0,
@@ -121,7 +121,7 @@ let all_product = [
   },
   {
     id: 11,
-    name: "Iphone 10",
+    name: "Iphone SE",
     category: "iphone",
     image: p11_img,
     new_price: 85.0,
@@ -129,7 +129,7 @@ let all_product = [
   },
   {
     id: 12,
-    name: "Iphone 11",
+    name: "Iphone 14",
     category: "iphone",
     image: p12_img,
     new_price: 85.0,
@@ -138,7 +138,7 @@ let all_product = [
 
   {
     id: 13,
-    name: "Samsung",
+    name: "Samsung s7",
     category: "samsung",
     image: p13_img,
     new_price: 85.0,
@@ -146,7 +146,7 @@ let all_product = [
   },
   {
     id: 14,
-    name: "Samsung",
+    name: "Samsung s9 Tab",
     category: "samsung",
     image: p14_img,
     new_price: 85.0,
@@ -154,7 +154,7 @@ let all_product = [
   },
   {
     id: 15,
-    name: "Samsung",
+    name: "Samsung s23",
     category: "samsung",
     image: p15_img,
     new_price: 85.0,
@@ -162,7 +162,7 @@ let all_product = [
   },
   {
     id: 16,
-    name: "Samsung",
+    name: "Samsung s23",
     category: "samsung",
     image: p16_img,
     new_price: 85.0,
@@ -170,7 +170,7 @@ let all_product = [
   },
   {
     id: 17,
-    name: "Samsung",
+    name: "Samsung s24 Ultra",
     category: "samsung",
     image: p17_img,
     new_price: 85.0,
@@ -178,7 +178,7 @@ let all_product = [
   },
   {
     id: 18,
-    name: "Samsung",
+    name: "Samsung s23",
     category: "samsung",
     image: p18_img,
     new_price: 85.0,
@@ -186,7 +186,7 @@ let all_product = [
   },
   {
     id: 19,
-    name: "Samsung",
+    name: "Samsung s20",
     category: "samsung",
     image: p19_img,
     new_price: 85.0,
@@ -194,7 +194,7 @@ let all_product = [
   },
   {
     id: 20,
-    name: "Samsung",
+    name: "Samsung s23 ultra",
     category: "samsung",
     image: p20_img,
     new_price: 85.0,
@@ -202,7 +202,7 @@ let all_product = [
   },
   {
     id: 21,
-    name: "Samsung",
+    name: "Samsung s21 ultra",
     category: "samsung",
     image: p21_img,
     new_price: 85.0,
@@ -210,7 +210,7 @@ let all_product = [
   },
   {
     id: 22,
-    name: "Samsung",
+    name: "Samsung s23 ultra",
     category:"samsung",
     image: p22_img,
     new_price: 85.0,
@@ -218,7 +218,7 @@ let all_product = [
   },
   {
     id: 23,
-    name: "Samsung",
+    name: "Samsung s24 ultra",
     category: "samsung",
     image: p23_img,
     new_price: 85.0,
@@ -226,7 +226,7 @@ let all_product = [
   },
   {
     id: 24,
-    name: "Samsung",
+    name: "Samsung a55",
     category: "samsung",
     image: p24_img,
     new_price: 85.0,
