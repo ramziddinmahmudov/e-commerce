@@ -44,7 +44,6 @@ a{
 }
 
 .nav-menu {
-    align-items: center;
     list-style: none;
     gap: 30px;
     color: var(--textColor);
@@ -128,107 +127,6 @@ a{
     width: 80px;
     height: 100px;
 }
-/* @media (max-width: 1400px) {
-    .nav-menu {
-        gap: 40px;
-    }
-}
-
-@media (max-width: 1300px) {
-    .nav-menu {
-        gap: 30px;
-    }
-}
-
-@media (max-width: 1200px) {
-    .nav-menu {
-        gap: 20px;
-    }
-}
-
-@media (max-width: 1100px) {
-    .nav-menu {
-        gap: 15px;
-    }
-    .logo_burger{
-        display: block;
-    }
-}
-
-@media (max-width: 1005px) {
-    .nav-menu {
-        gap: 10px;
-    }
-    .nav-logo p{
-        font-size: 30px;
-    }
-}
-
-@media (max-width: 900px) {
-    .nav-menu {
-        gap: 5px;
-    }
-}
-
-@media (max-width: 800px) {
-    .nav-menu {
-        gap: 0;
-    }
-
-    .nav-login-cart {
-        gap: 30px;
-    }
-}
-
-@media (max-width: 700px) {
-    .nav-menu {
-        display: none;
-    }
-
-    .nav-login-cart {
-        justify-content: center;
-    }
-    .nav-logo p{
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 600px) {
-    .nav-logo p {
-        font-size: 30px;
-    }
-
-    .nav-login-cart button {
-        width: 120px;
-        height: 45px;
-        font-size: 16px;
-        border-radius: 50px;
-    }
-}
-
-@media (max-width: 500px) {
-    .nav-logo p {
-        font-size: 24px;
-    }
-
-    .nav-login-cart button {
-        width: 100px;
-        height: 40px;
-        font-size: 14px;
-    }
-}
-
-    @media (max-width: 400px) {
-    .nav-logo p {
-        font-size: 20px;
-    }
-
-    .nav-login-cart button {
-        width: 80px;
-        height: 35px;
-        font-size: 12px;
-    }
-} */
 @media (max-width: 1280px) {
     .nav-logo p{
         font-size: 40px;
@@ -266,6 +164,7 @@ a{
 
   .nav-menu li {
     margin: 0 15px;
+    font-size: 23px;
   }
 
   .li1 hr {
