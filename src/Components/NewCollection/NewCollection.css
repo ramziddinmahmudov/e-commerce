@@ -26,3 +26,11 @@
     margin-top: 40px;
     grid-template-columns: repeat(auto-fit,350px);
 }
+@media(max-width:600px){
+    .new-collections h1{
+        font-size: 30px;
+    }
+    .new-collections hr{
+        width: 100px;
+    }
+}

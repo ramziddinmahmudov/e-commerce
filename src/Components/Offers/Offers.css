@@ -190,6 +190,10 @@
     .offers-left p {
         font-size: 12px;
     }
+    .offers-left button{
+        width: 200px;
+        height: 30px;
+    }
 }
 
 /* 400px o'lchamidan kichik ekranga */

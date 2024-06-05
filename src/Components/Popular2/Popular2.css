@@ -139,7 +139,7 @@
 }
 
 /* 900px o'lchamidan kichik ekranga */
-@media (max-width: 200px) {
+@media (max-width: 900px) {
     .popular {
         height: 350px;
     }
@@ -225,7 +225,7 @@
 /* 400px o'lchamidan kichik ekranga */
 @media (max-width: 400px) {
     .popular {
-        height: 350px;
+        height: 500px;
     }
     .popular-item {
         display: grid;
