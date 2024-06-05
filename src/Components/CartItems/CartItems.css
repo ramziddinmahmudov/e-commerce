@@ -34,8 +34,8 @@
 }
 
 .cartitems-quantity{
-    width: 64px;
-    height: 50px;
+    width: auto;
+    height: auto;
     border: 2px solid white;
 }
 
@@ -113,6 +113,43 @@
 
 @media only screen and (max-device-width: 1225px) {
     .cartitems{
-        margin: 20px;
+        margin: 50px;
+    }
+}
+@media(max-width:700px){
+    .cartitems-format-main{
+        gap: 30px;
+    }
+    .cartitem-promobox input{
+        width: 300px;
+    }
+    .cartitem-promobox button{
+        width: 100px;
+    }
+    .cartitem-promobox{
+        width: auto;
+    }
+    .cartitems-total button{
+        width: 150px;
+        height: 50px;
+        font-size: 10px;
+    }
+    .cartitems-total{
+        margin-bottom: 50px;
+    }
+}
+
+@media(max-width:510px){
+    .cartitem-promobox input{
+        width: 150px;
+    }
+    .cartitem-promobox{
+        width: 250px;
+    }
+    .cartitems-promocode{
+        width: 250px;
+    }
+    .cartitems-format-main{
+        gap: 10px;
     }
 }
