@@ -36,7 +36,8 @@ const Navbar = ({darkmode,handleDarkMode,authenticated, user,onLogout }) => {
       <div className="nav-logo" onClick={() => {setmenu("shop")}}>
         <Link to="/"><img src={logo} alt="" className="kom" /></Link>
         {menu === "shop" ? <hr /> : <></>}
-        <p>Mobile Shop</p>
+        <Link to="/"><p>Mobile Shop</p></Link>
+        {menu === "shop" ? <hr /> : <></>}
       </div>
       <img
         className="nav-dropdown"
@@ -60,7 +61,7 @@ const Navbar = ({darkmode,handleDarkMode,authenticated, user,onLogout }) => {
           onClick={() => {
             setmenu("samsung");
           }}
-          className="li1"
+          className="li2"
         >
           <Link style={{ textDecoration: "none" }} to="/samsung">
             Samsung
@@ -71,7 +72,7 @@ const Navbar = ({darkmode,handleDarkMode,authenticated, user,onLogout }) => {
           onClick={() => {
             setmenu("iphone");
           }}
-          className="li1"
+          className="li3"
         >
           <Link style={{ textDecoration: "none" }} to="/iphone">
             Iphone
@@ -82,7 +83,7 @@ const Navbar = ({darkmode,handleDarkMode,authenticated, user,onLogout }) => {
           onClick={() => {
             setmenu("nokia");
           }}
-          className="li1"
+          className="li4"
         >
           <Link style={{ textDecoration: "none" }} to="/nokia">
             Nokia
@@ -91,8 +92,8 @@ const Navbar = ({darkmode,handleDarkMode,authenticated, user,onLogout }) => {
         </li>
       </ul>
       <div className="nav-login-cart">
-        <Link style={{ textDecoration: "none" }} to="/cart">
-          <img src={cart_icon} alt="" />
+        <Link style={{ textDecoration: "none" }} to="/cart" className="cart-img">
+          <img src={cart_icon} alt="" className="cart-img"/>
         </Link>
         <div className="nav-cart-count">{getTotalCartItems()}</div>
       </div>
