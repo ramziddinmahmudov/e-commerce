@@ -152,4 +152,10 @@
     .cartitems-format-main{
         gap: 10px;
     }
+    .cartitems{
+        margin: 5px;
+    }
+    .cartitems-down{
+        margin-left: 20px;
+    }
 }

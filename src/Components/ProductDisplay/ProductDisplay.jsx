@@ -42,13 +42,13 @@ const ProductDisplay = (props) => {
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus fuga labore ratione ullam, ut voluptatem. this product is very welllll
         </div>
         <div className="productdisplay-right-size">
-          <h1>Select Size</h1>
+          <h1>Select Color</h1>
           <div className="productdisplay-right-sizes">
-            <div className='sizes'>S</div>
-            <div className='sizes'>M</div>
-            <div className='sizes'>L</div>
-            <div className='sizes'>XL</div>
-            <div className='sizes'>XXl</div>
+            <div className='sizes'>Red</div>
+            <div className='sizes'>Blue</div>
+            <div className='sizes'>Yellow</div>
+            <div className='sizes'>Green</div>
+            <div className='sizes'>Black</div>
           </div>
         </div>
         <button onClick={()=>{addToCart(product.id)}} className="button1111" >ADD TO CART</button>
