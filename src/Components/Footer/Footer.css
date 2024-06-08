@@ -9,6 +9,11 @@
 .kom1{
     width: 200px;
 }
+.hr_p{
+    width: 20px;
+    height: 4px;
+    color: var(--textColor);
+}
 .footer-logo {
     display: flex;
     align-items: center;

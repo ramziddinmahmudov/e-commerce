@@ -152,6 +152,12 @@ a{
         display: block;
     }
 }
+@media(max-width :620px){
+  .nav-logo img{
+    display: none;
+  }
+}
+
 @media(max-width :570px){
     .nav-logo p{
         font-size: 20px;
@@ -178,11 +184,18 @@ a{
     .btnnnn{
       width: 30px;
     }
+}
+
+@media(max-width :480px){
+  .nav-logo p{
+    font-size: 14px;
+  }
     .user-button{
-      width: 20px;
+      width: 70px;
+      font-size: 10px;
     }
-    .dropdown-menu{
-      width: 250px;
+    .logo_burger{
+      width: 30px;
     }
 }
 
@@ -230,15 +243,14 @@ a{
   
   .user-button,
   .logout-button {
-    padding: 5px 10px;
+    padding: 10px 10px;
     background-color: #3498db;
     color: var(--backColor);
     border: none;
     cursor: pointer;
   }
   .user-button{
-    border-radius: 50%;
-    width: 40px;
+    border-radius: 10%;
     text-align: center;
   }
   .user-button:hover,
@@ -248,9 +260,9 @@ a{
   
   .dropdown-menu {
     position: absolute;
-    top: 40px;
-    right: 2px;
-    width: 250px;
+    top: 75px;
+    right: -30px;
+    width: 300px;
     background-color: var(--backColor);
     color: var(--textColor);
     padding: 10px;

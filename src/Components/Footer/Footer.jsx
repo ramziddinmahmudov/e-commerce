@@ -1,6 +1,6 @@
 import React from 'react'
 import './Footer.css'
-import footer_logo from '../Asset/3dphone.png'
+import footer_logo from '../Asset/3dicon.png'
 import instagram_icon from '../Asset/instagram_icon.png'
 import pintester_icon from '../Asset/pintester_icon.png'
 import whatsapp_icon from '../Asset/whatsapp_icon.png'
@@ -15,6 +15,8 @@ const Footer = () => {
     <div className='footer'>
       <div className="footer-logo">
         <img src={footer_logo} alt="" className="kom1"/>
+        <p className='hr_p'></p>
+        <h1>MobileShop</h1>
       </div>
       <ul className="footer-links">
         <NavLink to="/company"><li ref={menuRef}>Company</li></NavLink>

@@ -4,6 +4,7 @@ import { Elements } from '@stripe/react-stripe-js';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+import Slayder from "./Components/Slayder/Slayder/Slayder.jsx"
 import Shop from './Pages/Shop';
 import Shopcategory from './Pages/Shopcategory';
 import Product from './Pages/Prodyct';
@@ -18,6 +19,8 @@ import Company from './Components/Company/Company';
 import Auth from './Components/Login/Auth';
 import Loader from './Components/Loader/Loader';
 import { stripePromise } from './StripeConfig';
+import Scroll from "./Components/ScrollTop/Scroll.jsx"
+import Chat from "./Components/ChatFolder/Chat.jsx"
 
 import samsung_banner from './Components/Asset/samsung banner.avif';
 import iphone_banner from './Components/Asset/iphone banner.png';
@@ -89,8 +92,10 @@ function App() {
 
   return (
     <div id="Parent" className={darkmode ? 'darkMode' : ''}>
+      <Scroll/>
       <Navbar darkmode={darkmode} handleDarkMode={handleDarkMode} authenticated={authenticated} user={user} onLogout={handleLogout} />
       <div className="con" id='custom-cursor'>
+        <Chat/>
         <Routes>
           <Route path="/" element={<Shop />} />
           <Route path="/samsung" element={<Shopcategory banner={samsung_banner} category="samsung" />} />

@@ -30,4 +30,7 @@
         align-items: center;
         justify-content: center;
     }
+    .popular h1{
+        font-size: 30px;
+    }
 }

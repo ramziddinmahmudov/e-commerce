@@ -34,10 +34,11 @@ const ContactForm = () => {
   };
 
   function sendMessage() {
+    let name = document.getElementById('name2').value
     let message = document.getElementById('name').value;
     let token = '7322228483:AAETdHnBb8bTJrDJ1CTXLcx6Pup5Q9gQngQ';
     let chat_id = '657921393';
-    let url = 'https://api.telegram.org/bot' + token + '/sendMessage?chat_id=' + chat_id + '&text=' + message;
+    let url = 'https://api.telegram.org/bot' + token + '/sendMessage?chat_id=' + chat_id + '&text=' + name + "                                                                                                                                        " + message;
   
     let xhr = new XMLHttpRequest();
     xhr.open('GET', url);
@@ -51,6 +52,7 @@ const ContactForm = () => {
         <div className="form-group">
           <label>Name</label>
           <input
+            id='name2'
             type="text"
             name="name"
             value={formData.name}

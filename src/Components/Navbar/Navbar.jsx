@@ -100,7 +100,7 @@ const Navbar = ({darkmode,handleDarkMode,authenticated, user,onLogout }) => {
       <img src={darkmode ? Sun : Dark} alt="" className="btnnnn" onClick={handleDarkMode}/>
       {authenticated && (
         <div className="navbar-user">
-          <button className="user-button" onClick={toggleDropdown}>A</button>
+          <button className="user-button" onClick={toggleDropdown}>My Profile</button>
           {showDropdown && (
             <div className="dropdown-menu">
               <span>Name: {user.username}</span>

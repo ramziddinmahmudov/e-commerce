@@ -15,6 +15,7 @@
 *{
     margin:0;
     padding: 0;
+    user-select: none;
 }
 
 .con{
@@ -30,13 +31,13 @@
 
 body{
     transition: 0.5s;
+    font-family:fantasy;
 }
 
 .dev-banner{
     display: none;
 }
 
-/* Add this to your App.css or a separate CSS file */
 .success-notification {
   position: fixed;
   bottom: 20px;

@@ -7,6 +7,11 @@ import NewsLetter from "../Components/NewsLetter/NewsLetter";
 import Popular1 from "../Components/Popular1/Popular1.jsx";
 import Popular2 from "../Components/Popular2/Popular2.jsx";
 import SearchBar from "../Components/Searchbar/Search.jsx"
+import Chat from "../Components/ChatFolder/Chat.jsx"
+import Top from "../Components/Top/Top.jsx"
+import Scroll from "../Components/ScrollTop/Scroll.jsx"
+import Slayder from "../Components/Slayder/Slayder/Slayder.jsx"
+
 const Shop = () => {
   return (
     <div>
@@ -18,6 +23,9 @@ const Shop = () => {
       <Offers />
       <NewCollection />
       <NewsLetter />
+      <Chat/>
+      <Top/>
+      <Slayder/>
     </div>
   );
 };

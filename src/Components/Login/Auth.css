@@ -10,8 +10,14 @@
   font-family: 'Arial', sans-serif;
   
 }
-
+.userbtn{
+  border-radius: 12px;
+  width: 100;
+  height: 40px;
+  border: 2px solid blue;
+}
 .auth-box {
+
   background: white;
   padding: 40px;
   border-radius: 10px;
