@@ -4,6 +4,7 @@ import { Elements } from '@stripe/react-stripe-js';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+import Voice from "./Components/Vocal/Vocal/Vocal.jsx"
 import Shop from './Pages/Shop';
 import Shopcategory from './Pages/Shopcategory';
 import Product from './Pages/Prodyct';
@@ -111,6 +112,7 @@ function App() {
           <Route path="/company" element={<Company />} />
         </Routes>
       </div>
+      <Voice/>
       <Footer />
       {showSuccess && (
         <div className="success-notification">

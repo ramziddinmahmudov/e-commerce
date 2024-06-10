@@ -1,0 +1,117 @@
+.vocal-search-container {
+  width: 60%;
+  margin: auto;
+  background-color: #1e293b; /* Dark slate */
+  border: 2px solid #dc2626; /* Red border */
+  border-radius: 1.5rem;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.title {
+  font-size: 2rem;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.mic-button {
+  position: fixed;
+  bottom: 100px;
+  right: 60px;
+  z-index: 1000;
+  background-color: #007bff;
+  border: none;
+  color: #ffeb3b;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mic-button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+button:disabled {
+  background-color: rgb(128, 128, 128);
+  cursor: not-allowed;
+}
+
+.search-input {
+  width: 80px;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.product-result {
+  border: 1px solid red;
+  padding: 15px 25px;
+  width: 50%;
+  border-radius: 1.2rem;
+  margin-top: 20px;
+  transition: filter 0.3s ease;
+}
+
+.product-result:hover {
+  filter: drop-shadow(2px 3px 15px red);
+}
+
+.product-image {
+  cursor: pointer;
+  width: 100%;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.product-image:hover {
+  transform: scale(1.05);
+}
+
+.product-name, .product-price {
+  color: var(--voiceColor, #fff);
+  font-size: 1.25rem;
+  margin-top: 10px;
+}
+
+.no-result {
+  color: #dc2626;
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+@media (max-width: 1070px) {
+  .product-result {
+    width: 100%;
+  }
+}
+
+@media (max-width: 468px) {
+  .product-name, .product-price {
+    font-size: 1rem;
+  }
+}
