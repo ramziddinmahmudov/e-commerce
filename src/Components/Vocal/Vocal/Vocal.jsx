@@ -5,21 +5,21 @@ import './Vocal.css';
 const products = [
   {
     id: 1,
-    name: "Iphone X",
+    name: "Iphone",
     price: 250,
-    img: "/src/Components/Asset/iphone10.png",
+    img: "/public/iphone15pro.png",
   },
   {
     id: 2,
     name: "Samsung",
     price: 960,
-    img: "/src/Components/Asset/s24.png",
+    img: "/public/s24.png"
   },
   {
     id: 3,
     name: "Nokia",
     price: 100,
-    img: "/src/Components/Asset/nokia1.png",
+    img: "/public/nokia1.png",
   },
 ];
 
