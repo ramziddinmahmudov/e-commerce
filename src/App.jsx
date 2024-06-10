@@ -41,7 +41,7 @@ function App() {
 
     setTimeout(() => {
       setLoading(false);
-    }, 7000);
+    }, 3000);
 
     AOS.init({
       duration: 1200,
