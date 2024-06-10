@@ -1,5 +1,8 @@
 import React, { useEffect } from 'react';
 import Slider from 'react-slick';
+import img1 from "/src/Components/Asset/sponsor.png"
+import img2 from "/src/Components/Asset/sponsor4.png"
+import img3 from "/src/Components/Asset/sponsor2.png"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import 'slick-carousel/slick/slick.css';
@@ -56,21 +59,20 @@ const MentorSlider = () => {
     ]
   };
 
-  const mentors = [
-    { id: 1, imgSrc: '/src/Components/Asset/sponsor.png'},
-    { id: 2, imgSrc: '/src/Components/Asset/sponsor4.png'},
-    { id: 3, imgSrc: '/src/Components/Asset/sponsor2.png'},
-  ];
 
   return (
     <div className="mentor-slider-container">
       <h2>Our sponsor</h2>
       <Slider {...settings}>
-        {mentors.map((mentor) => (
-          <div key={mentor.id} className="mentor-slide" data-aos="fade-up">
-            <img src={mentor.imgSrc} alt={`Mentor ${mentor.id}`} className="mentor-image" />
+          <div className="mentor-slide" data-aos="fade-up">
+            <img src={img1} className="mentor-image" />
           </div>
-        ))}
+          <div className="mentor-slide" data-aos="fade-up">
+            <img src={img2} className="mentor-image" />
+          </div>
+          <div className="mentor-slide" data-aos="fade-up">
+            <img src={img3} className="mentor-image" />
+          </div>
       </Slider>
     </div>
   );
