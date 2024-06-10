@@ -112,7 +112,6 @@ function App() {
           <Route path="/company" element={<Company />} />
         </Routes>
       </div>
-      <Voice/>
       <Footer />
       {showSuccess && (
         <div className="success-notification">
