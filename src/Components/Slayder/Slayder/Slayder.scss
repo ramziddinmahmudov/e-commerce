@@ -1,21 +1,54 @@
 .mentor-slider-container {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
-  overflow: hidden;
-}
-
-  
-.mentor-image {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  display: block;
-  margin: 0 auto;
-  cursor: pointer;
+  padding: 20px;
+  text-align: center;
 }
 
 .mentor-slide {
-  width: 22.5%; /* Har bir slide'ning o'lchami 22.5% ga teng bo'lishi kerak */
-  padding: 10px;
-  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mentor-image {
+  max-width: 225px;
+  height: 225px;
+  object-fit: contain;
+}
+
+@media (max-width: 1024px) {
+  .mentor-slider-container {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .mentor-image {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  .mentor-slider-container {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .mentor-image {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mentor-slider-container {
+    width: 80%;
+    padding: 10px;
+  }
+
+  .mentor-image {
+    width: 100px;
+    height: 100px;
+  }
 }

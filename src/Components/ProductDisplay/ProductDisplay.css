@@ -321,6 +321,9 @@
   }
   
   @media (max-width: 700px) {
+    .productdisplay-main-img{
+      width: 300px;
+    }
     .productdisplay {
       gap: 70px;
     }

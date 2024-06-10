@@ -1,27 +1,39 @@
-// server.js
-
 const express = require('express');
+const Stripe = require('stripe');
 const bodyParser = require('body-parser');
-const stripe = require('stripe')('your_stripe_secret_key');
+const cors = require('cors');
+
+const stripe = Stripe('YOUR_STRIPE_SECRET_KEY'); // Replace with your Stripe secret key
 
 const app = express();
+app.use(cors());
 app.use(bodyParser.json());
 
 app.post('/pay', async (req, res) => {
-  try {
-    const { amount, token } = req.body;
+  const { token, amount } = req.body;
 
-    const charge = await stripe.charges.create({
+  try {
+    // Create a charge
+    const charge = await stripe.paymentIntents.create({
       amount: amount,
       currency: 'usd',
-      source: token,
+      payment_method: token,
+      confirm: true,
     });
 
-    res.status(200).json({ message: 'To\'lov muvaffaqiyatli amalga oshirildi' });
-  } catch (err) {
-    res.status(500).json({ error: err.message });
+    // You would need to create a connected account for the destination
+    // and transfer funds to the connected account
+    const transfer = await stripe.transfers.create({
+      amount: amount,
+      currency: 'usd',
+      destination: 'DESTINATION_ACCOUNT_ID', // Replace with the connected account ID
+    });
+
+    res.send({ message: 'Payment successful', charge, transfer });
+  } catch (error) {
+    res.status(500).send({ error: error.message });
   }
 });
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Server ${PORT}-portda ishga tushirildi`));
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

@@ -1,20 +1,22 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import Item from "../Item/Item";
 
-const ProductList = ({ products}) => {
+const ProductList = ({ all }) => {
   return (
     <div className="product-list">
-      {products.length > 0 ? (
-        products.map((product, index) => (
-            <div key={index} className="product-item">
-              <img
-                src={product.imageUrl}
-                alt={product.name}
-                className="product-image"
-              />
-              <div>{product.name}</div>
-            </div>
-        ))
+      {all.length > 5 ? (
+        <div className="product-list11">
+          {all.map((item, i) => (
+            <Item
+              key={i}
+              id={item.id}
+              name={item.name}
+              image={item.image}
+              new_price={item.new_price}
+              old_price={item.old_price}
+            />
+          ))}
+        </div>
       ) : (
         <div>Mahsulot topilmadi</div>
       )}

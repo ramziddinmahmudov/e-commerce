@@ -12,30 +12,59 @@ const MentorSlider = () => {
   }, []);
 
   const settings = {
-    dots: true,
+    dots: false,
+    arrows: false,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
-    adaptiveHeight: true, // Added this line to adapt the height based on content
+    autoplaySpeed: 1000,
+    adaptiveHeight: true,
+    centerMode: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: false,
+          dots: false,
+          arrows: false  
+      }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: false,
+          dots: false,
+          arrows: false  // Remove navigation arrows
+        }
+      }
+    ]
   };
 
   const mentors = [
-    { id: 1, imgSrc: 'https://via.placeholder.com/300x200?text=Mentor+1' },
-    { id: 2, imgSrc: 'https://via.placeholder.com/300x200?text=Mentor+2' },
-    { id: 3, imgSrc: 'https://via.placeholder.com/300x200?text=Mentor+3' },
-    { id: 4, imgSrc: 'https://via.placeholder.com/300x200?text=Mentor+4' },
-    { id: 5, imgSrc: 'https://via.placeholder.com/300x200?text=Mentor+5' },
-    { id: 6, imgSrc: 'https://via.placeholder.com/300x200?text=Mentor+6' },
-    { id: 7, imgSrc: 'https://via.placeholder.com/300x200?text=Mentor+7' },
-    { id: 8, imgSrc: 'https://via.placeholder.com/300x200?text=Mentor+8' },
+    { id: 1, imgSrc: '/src/Components/Asset/sponsor.png'},
+    { id: 2, imgSrc: '/src/Components/Asset/sponsor4.png'},
+    { id: 3, imgSrc: '/src/Components/Asset/sponsor2.png'},
   ];
 
   return (
     <div className="mentor-slider-container">
-      <h2>Mentorlarimiz</h2>
+      <h2>Our sponsor</h2>
       <Slider {...settings}>
         {mentors.map((mentor) => (
           <div key={mentor.id} className="mentor-slide" data-aos="fade-up">

@@ -104,6 +104,12 @@ a{
 }
 /* 600px o'lchamidan kichik ekranga */
 @media (max-width: 600px) {
+    .footer-logo h1{
+        font-size: 20px;
+    }
+    .footer-logo img{
+        width: 100px;
+    }
     .footer {
         gap: 30px;
         margin-top: 30px;

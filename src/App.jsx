@@ -4,7 +4,6 @@ import { Elements } from '@stripe/react-stripe-js';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import Slayder from "./Components/Slayder/Slayder/Slayder.jsx"
 import Shop from './Pages/Shop';
 import Shopcategory from './Pages/Shopcategory';
 import Product from './Pages/Prodyct';

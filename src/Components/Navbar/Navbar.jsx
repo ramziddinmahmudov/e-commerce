@@ -3,7 +3,7 @@ import "./Navbar.css";
 import './App.css'
 import Sun from "../Asset/sun.svg"
 import Dark from "./pp.png"
-import logo from "../Asset/phone-svgrepo-com.svg";
+import logo from "../Asset/3dicon.png";
 import cart_icon from "../Asset/cart_icon.png";
 import logo_burger from '../Asset/menu-burger-horizontal-svgrepo-com.svg'
 import { Link } from "react-router-dom";

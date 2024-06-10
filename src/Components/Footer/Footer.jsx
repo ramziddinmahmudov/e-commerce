@@ -15,7 +15,6 @@ const Footer = () => {
     <div className='footer'>
       <div className="footer-logo">
         <img src={footer_logo} alt="" className="kom1"/>
-        <p className='hr_p'></p>
         <h1>MobileShop</h1>
       </div>
       <ul className="footer-links">
@@ -27,10 +26,10 @@ const Footer = () => {
       </ul>
       <div className="footer-social-icon">
           <div className="footer-icons-container">
-              <a href="https://www.pinterest.com/" target="_blank"> <img src={instagram_icon} alt=""/></a>
+              <a href="https://www.instagram.com/" target='_blank'> <img src={instagram_icon} alt=""/></a>
           </div>
           <div className="footer-icons-container">
-              <a href="https://www.instagram.com/" target='_blank'> <img src={pintester_icon} alt=""/></a>
+              <a href="https://www.pintester.com/" target='_blank'> <img src={pintester_icon} alt=""/></a>
           </div>
           <div className="footer-icons-container">
               <a href="https://www.whatsapp.com/?lang=ru_RU" target="_blank"><img src={whatsapp_icon} alt=""/></a>

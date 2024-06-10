@@ -7,7 +7,7 @@
 
 .relatedproducts h1{
  color: var(--textColor);
- font-size: 50px;
+ font-size: 40px;
  font-weight: 600;   
 }
 
@@ -26,5 +26,8 @@
 @media(max-width:580px){
     .relatedproducts-item{
         display: block;
+    }
+    .relatedproducts h1{
+        font-size: 30px;
     }
 }

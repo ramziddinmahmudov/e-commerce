@@ -22,10 +22,10 @@ const Shop = () => {
       <Popular2 />
       <Offers />
       <NewCollection />
+      <Slayder/>
       <NewsLetter />
       <Chat/>
       <Top/>
-      <Slayder/>
     </div>
   );
 };
