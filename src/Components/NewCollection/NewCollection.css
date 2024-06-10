@@ -1,9 +1,12 @@
-.collections{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,350px);
-    align-items: center;
-    justify-content: center;
+.collections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+  overflow: hidden; /* Prevents scroll */
 }
+
 .item{
     margin-bottom: 50px;
 }
